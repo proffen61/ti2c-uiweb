@@ -1,17 +1,108 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Latihan User Interface
-        </title>
-    </head>
-    <body>
-        <h1>Nama: Iman Danis R.M</h1>
-        <h1>NIM: 233307079</h1>
-        <h3>pilih jenis kelamin</h3>
-        <form>
-            <input type="radio" name="gender" value="laki-laki"> Laki-laki </br>
-            <input type="radio" name="gender" value="perempuan"> Perempuan </br>
-            <input type="submit" value="SIMPAN">
-        </form>
-    </body>
+<head>
+	<title>My Profile</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-image: url('B.jpg');
+			background-size: cover;
+			background-position: center;
+		}
+		.header {
+			background-color: rgba(0, 0, 0, 0.5);
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			animation: fadeIn 2s ease-in-out;
+		}
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+		.profile {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			margin-top: 50px;
+			animation: fadeIn 2s ease-in-out;
+		}
+		.profile-pic {
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			object-fit: cover;
+			object-position: center;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+			animation: fadeIn 2s ease-in-out;
+			transition: transform 0.3s ease-in-out;
+		}
+		.profile-pic:hover {
+			transform: scale(1.1);
+		}
+		.move {
+			animation: move 1s ease-in-out infinite;
+		}
+		h1 {
+			color: #fff;
+			font-size: 2.5em;
+			margin: 0;
+			margin-bottom: 10px;
+			animation: fadeIn 2s ease-in-out;
+		}
+		.profile-info {
+			margin: 0;
+			margin-bottom: 20px;
+			animation: fadeIn 2s ease-in-out;
+		}
+		.profile-info p {
+			margin: 0;
+			margin-bottom: 10px;
+			color: #fff;
+			animation: fadeIn 2s ease-in-out;
+		}
+		.additional-feature {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+			margin-bottom: 50px;
+			animation: fadeIn 2s ease-in-out;
+		}
+		.footer {
+			background-color: rgba(0, 0, 0, 0.5);
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			animation: fadeIn 2s ease-in-out;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>My Profile</h1>
+	</div>
+	<div class="profile">
+		<img src="P.jpg" class="profile-pic">
+		<div class="profile-info">
+			<h1>Iman Danis Ramda Maryan</h1>
+			<p>School: Politeknik Negeri Madiun</p>
+			<p>Class: 2C</p>
+			<p>Province: Jawa Timur</p>
+		</div>
+	</div>
+	<div class="footer">
+		<p>&copy; 27 Februari 2024 </p>
+	</div>
+</body>
 </html>
